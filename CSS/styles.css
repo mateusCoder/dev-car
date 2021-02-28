@@ -405,6 +405,7 @@ footer .last{
 }
 
 /*Responsive adjustments */
+
 @media (max-width: 576px){
     nav ul li{
         display: none;
@@ -435,7 +436,7 @@ footer .last{
 
     .search-button{
         max-width: 150px;
-        min-width: 80px
+        min-width: 80px;
     }
 
     .about{
@@ -483,8 +484,8 @@ footer .last{
         height: 100%;
     }
 
-    footer-links{
+    .footer-links{
         flex-direction: column;
-        padding-left: 100%;
+        padding-left: 10%;
     }
 }
