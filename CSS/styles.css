@@ -47,9 +47,14 @@ nav{
 }
 
 .brand{
-    font-size: 24px;
+    font-size: 28px;
+    text-align: center;
     color: var(--blue);
+    border-radius: 5px;
     cursor: pointer;
+    width: 200px;
+    height: 34px;
+    background: linear-gradient(to top, white , yellow);;
 }
 
 nav ul{
@@ -66,10 +71,12 @@ nav ul li{
 nav ul li a{
     color: var(--blue);
     text-decoration: none;
+    transition: 0.2s;
 }
 
 nav ul li a:hover{
-    color: #00285f83;
+    color: white;
+    font-size: 17px;
 }
 
 nav ul button{
@@ -101,18 +108,19 @@ nav ul button:hover{
     position: relative;
     z-index: 10;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-block img {
     width: 50%;
     position: absolute;
     right: 2%;
-    bottom: 2%;
 }
 
 .header-block .text{
     position: absolute;
-    bottom: 30%;
     left: 15%;
 }
 
@@ -168,12 +176,13 @@ section .filter-card{
     color: white;
     cursor: pointer;
     font-size: 1.1em;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 .search-button:hover {
     background: var(--gray);
     color: var(--blue);
+    border: solid 1px var(--blue);
 }
 
 .title-wrapper-catalog{
@@ -232,13 +241,14 @@ section .card-item{
     font-weight: bold;
     font-size: 1.1em;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     margin-bottom: 10px;
 }
 
 .card-item button:hover{
     background: var(--gray);
     color: var(--blue);
+    border: solid 1px var(--blue);
 }
 
 /* about */
@@ -295,7 +305,8 @@ section .card-item{
     max-width: 90%;
     font-size: 1em;
     letter-spacing: 2px;
-    text-align: right;
+    text-align: justify;
+    text-indent: 16px;
     color: rgba(0, 0, 0, 0.4);
 }
 
