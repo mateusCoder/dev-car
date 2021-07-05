@@ -1,0 +1,148 @@
+/*Responsive adjustments */
+
+@media(max-width: 768px){
+    .content .header-block .text{
+        left: 5%;
+    }
+
+    .title-wrapper-catalog{
+        margin-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    .right{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    nav ul li{
+        display: none;
+    }
+
+    .header-block img{
+        width: 70%;
+        position: absolute;
+        right: 16%;
+        top: 30%;
+    }
+
+    .header-block .text{
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+    }
+
+    .search-button{
+        max-width: 150px;
+        min-width: 80px;
+    }
+
+    .about{
+        margin-top: 100px;
+    }
+
+    .title-wrapper-about{
+        margin-bottom: 20px;
+    }
+
+    .about-content{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        width: 90%;
+    }
+
+    .right p{
+        width: 100%;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .features{
+        height: 100%;
+    }
+
+    .feature-card-block{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    footer .main{
+        height: 100%;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        padding-left: 10%;
+    }
+}
+
+@media(max-width: 425px){
+    header{
+        height: 300px;
+    }
+
+    .content .header-block{
+        height: 300px;
+    }
+
+    .header-block img{
+        right: 15%;
+        top: 2%;
+    }
+
+    .header-block .text{
+        top: 60%;
+        right: 10%;
+    }
+
+    .about{
+        margin-top: 0;
+    }
+
+    .features{
+        padding: 0;
+    }
+
+    .footer-links{
+        margin: 0;
+        display: grid;    
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .footer-company, 
+    .footer-rental, 
+    .footer-contact, 
+    .footer-social{
+        width: 150px;
+    }
+}
+
+@media(max-width: 375px){
+    .search-input{
+        width: 60%;
+    }
+
+    .search-button{
+        max-width: 100px;
+        min-width: 40px;
+    }
+
+    .footer-links{
+        display: flex;
+        align-items: center;
+    }
+}
